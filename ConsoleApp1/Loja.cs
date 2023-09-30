@@ -1,0 +1,18 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace alunos
+{
+    internal class Loja
+    {
+        public string nome;
+        public string dadosBancarios;
+        public string dataDeVencimento;
+     
+
+       
+    }
+}
