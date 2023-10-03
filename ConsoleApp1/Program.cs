@@ -1,57 +1,101 @@
-﻿using alunos;
-using objetosorientados;
-
-namespace ConsoleApp1
+﻿using System;
+using System.Collections.Generic;
+namespace objetosorientados
 {
-    internal class Program
+
+    class Program
     {
-        class Usuario
-        {
-            public string Nome { get; set; }
-            public string Senha { get; set; }
-        }
+        static List<Usuario> listaUsuarios = new List<Usuario>();
+    
+
+       // dskjbsflkasnfdlçskdjfslkdfj
         static void Main(string[] args)
         {
-            Console.WriteLine("Página Inicial");
-            Console.WriteLine("1 - Cadastro");
-            Console.WriteLine("2 - Login");
-            Console.WriteLine("3 - Sair");
+            MostrarMenu();
 
-            Console.WriteLine("Escolha uma opção para prosseguir");
-
-            int opcao = 0;
-
-            switch (opcao)
-            {
-                case 1:
-                    CadastroUsuario();
-                    break;
-                case 2:
-                    LoginUsuario();
-                    break;
-                case 3:
-                    Console.WriteLine("Saindo do programa...");
-                    return;
-                default:
-                    Console.WriteLine("Tente novamente");
-                    break;
-
-            }
-            
         }
 
-        private static void LoginUsuario()
+         static void MostrarMenu()
         {
-            Console.WriteLine("Usuário:");
+            switch (Menu.MenuPrincipal())
+            {
+                case "1":
+                    CadastrarUsuario();
+                    break;
+                case "2":
+                    LogarUsuario();
+                    break;
+                case "3":
+                    Console.WriteLine("Saindo do programa.");
+                    break;
+                default:
+                    Console.WriteLine("tente novamente");
+                    break;
+            }
+        }
+
+        public static void CadastrarUsuario()
+        {
+            Console.WriteLine("Digite seu usuario e senha:");
+            Console.WriteLine("Usuario:");
+            Usuario usuario = new Usuario();
+
+
+            usuario.Nome = Console.ReadLine();
+
+
+
+            if (listaUsuarios.Exists(usuarioLista => usuarioLista.Nome == usuario.Nome))
+            {
+                Console.WriteLine("Nome de usuario em uso, escolha outro");
+                return;
+            }
+            Console.WriteLine("Senha");
+            usuario.Senha = Console.ReadLine();
+
+            listaUsuarios.Add(usuario);
+            Console.WriteLine("Cadastro realizado com sucesso");
+            Console.WriteLine();
+            Console.WriteLine("Digite 0 para voltar ao menu inicial");
+            string opcaozero = Console.ReadLine();
+
+            if (opcaozero == "0")
+            {
+                Console.Clear();
+                MostrarMenu();
+            }
+        }
+        public static void LogarUsuario()
+        {
+            Console.WriteLine("Digite seu usuario e senha:");
+
+
+
+            Console.WriteLine("Usuario:");
             string nome = Console.ReadLine();
+
+
 
             Console.WriteLine("Senha:");
             string senha = Console.ReadLine();
-        }
 
-        private static void CadastroUsuario()
-        {
-            throw new NotImplementedException();
+
+
+            Usuario usuario = listaUsuarios.Find(usuarioLista => usuarioLista.Nome == nome && usuarioLista.Senha == senha);
+
+
+
+            if (usuario != null)
+            {
+                Console.WriteLine("logado");
+            }
+            else
+            {
+                Console.WriteLine("incorreto");
+            }
+
+           
         }
     }
 }
+
