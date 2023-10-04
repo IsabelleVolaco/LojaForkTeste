@@ -12,6 +12,7 @@ namespace objetosorientados
         static void ImprimirBatatas()
         {
             Console.WriteLine("oi batatinha");
+			Console.WriteLine("oi repolho");
         }
 
     }
