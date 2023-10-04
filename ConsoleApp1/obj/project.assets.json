@@ -8,23 +8,23 @@
     "net6.0": []
   },
   "packageFolders": {
-    "C:\\Users\\paola.kloch\\.nuget\\packages\\": {},
+    "C:\\Users\\isabelle.volaco\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\paola.kloch\\source\\repos\\ConsoleApp1\\ConsoleApp1\\objetosorientados.csproj",
+      "projectUniqueName": "C:\\Users\\isabelle.volaco\\OneDrive - SENAC-SC\\Documentos\\Exercícios\\LojaPOOclone\\ConsoleApp1\\objetosorientados.csproj",
       "projectName": "objetosorientados",
-      "projectPath": "C:\\Users\\paola.kloch\\source\\repos\\ConsoleApp1\\ConsoleApp1\\objetosorientados.csproj",
-      "packagesPath": "C:\\Users\\paola.kloch\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\paola.kloch\\source\\repos\\ConsoleApp1\\ConsoleApp1\\obj\\",
+      "projectPath": "C:\\Users\\isabelle.volaco\\OneDrive - SENAC-SC\\Documentos\\Exercícios\\LojaPOOclone\\ConsoleApp1\\objetosorientados.csproj",
+      "packagesPath": "C:\\Users\\isabelle.volaco\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\isabelle.volaco\\OneDrive - SENAC-SC\\Documentos\\Exercícios\\LojaPOOclone\\ConsoleApp1\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\paola.kloch\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\isabelle.volaco\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
